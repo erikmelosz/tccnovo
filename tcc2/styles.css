@@ -7,6 +7,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
+    background-image: url(images/marmore.jpg);    
 }
 
 .container {
@@ -19,12 +20,22 @@ body {
     background-color: #375340;
     color: #fff;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     font-size: 1.1em;
     position: fixed;
     width: 100%;
     z-index: 1000;
 }
+
+.top-bar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.top-bar a:hover {
+    color: #c2ac70;
+}
+
 .contact-info p {
     font-size: 14px;
 }
@@ -115,6 +126,43 @@ body {
     color: #ffffff;
 }
 
+
+.card-image {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+    
+}
+
+/* Image inside the card */
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Container for the text content */
+.card-content {
+    padding: 16px;
+}
+
+/* Title of the card */
+.card-title {
+    font-size: 1.25em;
+    margin: 0 0 8px;
+}
+
+/* Description or other text */
+.card-text {
+    color: #555;
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
 footer {
     background-color: #ffffff;
     color: #c2ac70;
@@ -129,7 +177,12 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
 }
-
+.espaco{
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 40px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 .footer-section {
     flex: 1;
     padding: 10px;
@@ -205,15 +258,22 @@ footer {
         margin-bottom: 20px;
     }
 }
+.botton-padding {
+    padding-bottom: 30px;
+}
 #map {
     width: 100%;
-    height: 500px;
+    height: 500px;    
     border: 1px solid #ccc;
-    border-radius: 8px;
-    
-    
+    border-radius: 8px;        
 overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container-backgrounded {
+    background-color: #fff;    
+    height: auto;
+    width: 100%;
 }
 .conheca{
     border: 1px solid #ccc;
@@ -258,18 +318,21 @@ h1 {
 .details h2, .details h3 {
     color: #c2ac70;
 }
-.slider {
-    margin: 0 auto;
-    padding-top: 60px;
-    width: 800px;
-    height: 400px;
-    overflow: hidden;
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+    height: 50vh; 
+    padding: 16px;
+    gap: 16px; 
   }
   .slides {
-    width: 400%;
+    width: 500%;
     height: 400px;
     display: flex;
     margin-top: 30px;
+    padding-right: 10%;
   }
   .slides input {
     display: none;
